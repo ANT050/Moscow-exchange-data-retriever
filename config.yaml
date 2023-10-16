@@ -1,0 +1,16 @@
+# Неявное ожидание при поиске элементов
+sleep: 5
+
+# Сайт:
+website: https://www.moex.com/msn/stock-instruments
+financial_asset: ВТБ
+
+# Локаторы сайта
+agreement: //div/div/div/div[1]/div/a[1]
+ordinary_shares: //div[2]/div/div/div[2]/div[4]/div[1]/div/div
+preferred_shares: //div[2]/div/div/div[2]/div[4]/div[2]/div/div
+search_field: //div[2]/div/div/div[2]/div[1]/div/div/div/div/input
+financial_asset_page: //table/tbody/tr[1]/td[2]/a
+change_time_period: //*[@id="chart_candle_width"]/li[4]
+price_range: .highcharts-navigator-handle.highcharts-navigator-handle-left
+
