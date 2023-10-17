@@ -1,20 +1,17 @@
 import time
 import yaml
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 
-with open('config.yaml', encoding='utf-8') as file:
+with open('config_moex.yaml', encoding='utf-8') as file:
     file_data = yaml.safe_load(file)
     sleep = file_data['sleep']
     website = file_data['website']
 
-service = Service(executable_path=ChromeDriverManager().install())
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
-driver = webdriver.Chrome(service=service, options=options)
+driver = webdriver.Chrome(options=options)
 driver.implicitly_wait(sleep)
 
 driver.get(website)
