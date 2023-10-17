@@ -1,0 +1,26 @@
+# Неявное ожидание при поиске элементов
+sleep: 5
+
+# Название сохраненного файла
+filename: screenshot_tw.png
+
+
+# Сайт:
+website: https://ru.tradingview.com/
+financial_asset: ВТБ
+country: Россия
+
+# Локаторы сайта
+search_page: //span[contains(@class, "searchText-PCujdK9L")]
+switch_stock_tab: //span[@id="stocks"]/span[@class="content-zcjhaZ_y"]
+select_country_search: //button[@data-name="sources-button"]
+country_entry: //input[@class="input-qm7Rg5MB"]
+click_country: //div[contains(@class, "container-IxKZEhmO")]
+
+search_field: //input[@name="query" and @inputmode="search"]
+click_stock: //div[@class="cell-oRSs8UQo descriptionCell-oRSs8UQo"]
+parameters_stock: //a[@class="link-eFCYpbUa"]/span[@class="text-eFCYpbUa"]
+
+candlestick_chart: //button[@aria-label="Стиль графика — Японские свечи"]/span
+chart_period: //span[text()="5 лет"]
+scroll_to_chart: //div[2]/div/section/div[1]
