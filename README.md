@@ -21,7 +21,7 @@
 
 **Пример скриншота Investing (получение данных запрашиваемой валютной пары):**
 
-<img src="tw_currencies.jpg" height="177" width="604"/>
+<img src="inv_currencies.jpg" height="177" width="604"/>
 
 
 ### Примечания
